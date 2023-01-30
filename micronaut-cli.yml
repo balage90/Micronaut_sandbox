@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.kisrentacar
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [annotation-api, app-name, azure-cosmos-db, gradle, http-client, http-session, jackson-databind, java, java-application, jib, junit, kubernetes, kubernetes-client, logback, management, micronaut-build, netty-server, openapi, readme, shade, swagger-ui, yaml]

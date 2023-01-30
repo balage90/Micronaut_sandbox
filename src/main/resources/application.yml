@@ -1,0 +1,26 @@
+micronaut:
+  application:
+    name: micronaut_sandbox
+  session:
+    http:
+      cookie: true
+      header: true
+  router:
+    static-resources:
+      swagger:
+        paths: classpath:META-INF/swagger
+        mapping: /swagger/**
+      swagger-ui:
+        paths: classpath:META-INF/swagger/views/swagger-ui
+        mapping: /swagger-ui/**
+azure:
+  cosmos:
+    default-gateway-mode: true
+    endpoint: azure-cosmos-endpoint
+    key: ''
+    consistency-level: SESSION
+    endpoint-discovery-enabled: false
+netty:
+  default:
+    allocator:
+      max-order: 3
