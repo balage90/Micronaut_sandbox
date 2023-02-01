@@ -13,6 +13,13 @@ import io.swagger.v3.oas.annotations.info.*;
 public class Application {
 
     public static void main(String[] args) {
+
+        Users user = new Users();
+        user.setFirstName("Kovács");
+        user.setLastName("Balázs");
+        System.out.println(user.getFirstName());
+        System.out.println(user.getLastName());
+
         Micronaut.run(Application.class, args);
     }
 }

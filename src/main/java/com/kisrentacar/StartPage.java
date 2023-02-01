@@ -2,11 +2,12 @@ package com.kisrentacar;
 
 import io.micronaut.http.annotation.*;
 
-@Controller("/micronaut_sandbox")
-public class Micronaut_sandboxController {
+@Controller("/start-page")
+public class StartPage {
 
     @Get(uri="/", produces="text/plain")
     public String index() {
-        return "Example Response";
+        return "Welcome to Kis Rent a car";
     }
 }
+
