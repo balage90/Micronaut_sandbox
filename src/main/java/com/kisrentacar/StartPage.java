@@ -40,13 +40,7 @@ public class StartPage {
                         "</body>\n" +
                         "</html>");
     }
-    @Get("/{page}")
-    public HttpResponse getPage(String page) {
-        if (!pageExists(page)) {
-            throw new PageNotFoundExceptionHandler();
-        }
-        return HttpResponse.ok(getContent(page));
-    }
+
 
     private boolean pageExists(String page) {
         // Check if the page exists
